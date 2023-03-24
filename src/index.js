@@ -27,6 +27,15 @@ const HeadingStyle = {
   padding:'15px'
 }
 
+function Card(){
+  return(
+    <div className='card'>
+    <h3 className='cardTitle'>{todoTitle}</h3>
+    <p className='cardDes'>{todoDesc}</p>
+    <p className='cardFooter'>{DateName + '/' + MonthName + '/' +CurrentYear1}</p>
+   </div>
+  )
+}
 
 
 root.render( 
@@ -38,13 +47,12 @@ root.render(
       <p>{month}.{date1}.{currentYear}</p>
    </div>
   <hr />
-   <div className='card'>
-    <h3 className='cardTitle'>{todoTitle}</h3>
-    <p className='cardDes'>{todoDesc}</p>
-    <p className='cardFooter'>{DateName + '/' + MonthName + '/' +CurrentYear1}</p>
-   </div>
-
-
+   
+   <Card></Card>
+   <Card/>
+   <Card></Card>
+   <Card/>
+  
  </div>
   
 );
