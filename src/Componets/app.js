@@ -4,6 +4,7 @@ import Data from './data.json'
 import {v4 as uuidv4} from 'uuid'
 import NestedMap from './nestedMap';
 import UseEffect from './UseEffect/UseEffect';
+import Notify from './Notification/Notify';
 
 const a = "Hi this is Sudipta";
 
@@ -52,6 +53,7 @@ function app(){
     {/* <NestedMap></NestedMap> */}
 
     <UseEffect></UseEffect>
+    <Notify></Notify>
    </div>
     )
 }

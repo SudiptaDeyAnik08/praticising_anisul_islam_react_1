@@ -28,12 +28,6 @@ function UseEffect() {
       });
     },[])
 
-
-
-
-
-
-
   return (
     <div>UseEffect
     <h2>Count: {count}</h2>
